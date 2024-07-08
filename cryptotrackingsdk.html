@@ -1,0 +1,37 @@
+<!-- 
+Author: Jacobo Wiesner 
+Date: Summer 2024
+Summary: This is the HTML code for my Crypto Tracking website. 
+It contains headers that explain the website and creates the input boxes that are manipulated in JS.
+Finally, it creates the div where the crypto candlestick chart is displayed.
+-->
+
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <title>Alpaca Crypto Candlestick Chart</title>
+    <link rel="stylesheet" href="cryptotrackingsdk.css">  <!-- Link to CSS file -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Importing Plotly for candlestick charts -->
+    <script src="cryptotrackingsdk.js" defer></script>  <!-- Link to JS file -->
+</head>
+<body>
+    <h1>Crypto Tracking SDK</h1>
+    <h2>Crypto tracking made easy. Track anytime for every cryptocurrency.</h2>
+    <h3>Track the performance of any cryptocurrency from a start date to an end date</h3>
+    <ul> <!-- List of cryptocurrencies -->
+        <li>Bitcoin</li>
+        <li>Ethereum</li>
+        <li>Tether</li>
+        <li>50+ Cryptocurrencies</li>
+    </ul>
+    <h4>Enter a Crypto and a Currency:</h4> 
+    <input type="text" id="cryptoSymbol" placeholder="Enter crypto symbol (e.g., ETH/USD)"> <!-- Input for crypto symbol -->
+    <br><br>
+    <input type="date" id="startDate" placeholder="Start Date">  <!-- Date input for start date -->
+    <input type="date" id="endDate" placeholder="End Date"> <!-- Date input for end date -->
+    <br><br>
+    <button onclick="plotChart()">Show Chart</button> <!-- Button to initialize chart plotting -->
+    <div id="myDiv"></div> <!-- Div for displaying the chart -->
+</body>
+</html>
+
