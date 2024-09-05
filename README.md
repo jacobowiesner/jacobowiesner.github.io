@@ -1,4 +1,4 @@
-Motivation: Build an introductory tool so beginner traders can track cryptocurrency prices for a chosen timeframe. It is accessible, it has a huge database from Alpaca Data Markets API amd has an easy to understand stock chart. 
+Motivation: Build an introductory tool so beginner traders can track cryptocurrency prices for a chosen timeframe. It is accessible, it has a huge database from Alpaca Data Markets API and has an easy to understand stock chart. 
 
 Resources used in the project: I used Alpaca Data Markets free API and their documentation. The API gives access to a database of 50+ cryptocurrencies which contain the open, close, minimum, maximum prices for every day for the last 7 years. I also used the Plotly JavaScript graphing library.
 
